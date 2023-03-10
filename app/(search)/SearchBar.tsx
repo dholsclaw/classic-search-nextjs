@@ -2,7 +2,11 @@
 
 import {FaSearch} from "react-icons/fa";
 
-export default function SearchBar({setQuery}) {
+interface SearchBarProps {
+    setQuery(arg: string): void
+}
+
+export default function SearchBar({setQuery} :SearchBarProps) {
 
     const handleChange = async (value: string) => {
         setQuery(value);

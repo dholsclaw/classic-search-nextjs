@@ -1,8 +1,9 @@
 import SearchComponent from "./(search)/SearchComponent";
+import {User} from "../typings";
 
 const Home = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    const users = await response.json();
+    const users: User[] = await response.json();
 
     return (
         <div className="box-border m-0 p-0">
