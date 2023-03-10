@@ -6,3 +6,5 @@ Implemented with:
 * Tailwind CSS
 * Next.js
 * react-icons
+
+Runing version viewable at: https://classic-search-nextjs.vercel.app
